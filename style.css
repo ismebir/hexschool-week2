@@ -1,0 +1,466 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button {
+    border: 0;
+    background-color: none;
+    outline: none;
+}
+
+
+/* 主要code */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bruno Ace SC', cursive;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* color */
+.bg-black {
+    background: #000000;
+}
+
+.bg-white {
+    background: #FFFFFF;
+}
+
+.text-black {
+    color: #000000;
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
+.text-accent {
+    color: #00FFA3;
+}
+
+/* 字型大小 */
+h1 {
+    font-size: 128px;
+}
+
+h2 {
+    font-size: 64px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 24px;
+}
+
+/* padding & margin */
+.pt-exl {
+    padding-top: 160px;
+}
+
+.pt-l {
+    padding-top: 96px;
+}
+
+.pt-m {
+    padding-top: 40px;
+}
+
+.pt-s {
+    padding-top: 16px;
+}
+
+.pb-exl {
+    padding-bottom: 160px;
+}
+
+.pb-l {
+    padding-bottom: 96px;
+}
+
+.pb-m {
+    padding-bottom: 40px;
+}
+
+.pb-s {
+    padding-bottom: 16px;
+}
+
+.p-s {
+    padding: 16px;
+}
+
+.mt-l {
+    margin-top: 72px;
+}
+
+.mb-l {
+    margin-bottom: 72px;
+}
+
+.mb-m-1 {
+    margin-bottom: 36px;
+}
+
+.mb-m-2 {
+    margin-bottom: 24px;
+}
+
+/* 寬度、位置設定 */
+.bg-center {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    width: 1296px;
+}
+
+/* ------ */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.nav a {
+    display: block;
+    font-size: 16px;
+    color: #D1D1D1;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-1 {
+    align-items: center;
+}
+
+.c-1 .text {
+    width: 636px;
+    display: flex;
+    flex-direction: column;
+}
+
+.c-1 h1 {
+    align-self: flex-end;
+}
+
+.c-1 .text a {
+    font-size: 16px;
+    width: 186px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 32px;
+    padding: 12px 24px;
+    align-self: flex-end;
+}
+
+.bg-img {
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true) no-repeat center / cover;
+}
+
+.c-2 {
+    align-items: flex-start;
+}
+
+.c-2 .text {
+    width: 526px;
+}
+
+.img_small {
+    width: 128px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.c-2 .img {
+    width: 746px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-2 .img-1,
+.c-2 .img-2 {
+    width: 196px;
+}
+
+.c-2 .img-3 {
+    width: 306px;
+}
+
+.c-3 {
+    align-items: center;
+}
+
+.card {
+    width: 636px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-list {
+    width: calc(50% - 12px);
+    border: 1px solid #E3E3E3;
+    /* box-shadow效果較差 */
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.07));
+}
+
+.card-list p {
+    font-size: 16px;
+}
+
+.c-3 .text {
+    width: 526px;
+}
+
+.c-4 .text {
+    display: flex;
+    align-items: center;
+}
+
+.c-4 ul {
+    width: 526px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-4 a {
+    display: block;
+    width: 162px;
+    height: 162px;
+}
+
+.c-4 .img-1:hover,
+.c-4 .img-2:hover,
+.c-4 .img-3:hover {
+    object-fit: cover;
+    /* 設定圓角之後border-shadow也會跟著有圓角 */
+    border-radius: 40px;
+    /* filter: drop-shadow(0px 2px 16px rgba(144, 148, 255, 0.9)) drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+     */
+    box-shadow: 0px 0px 6px 3px rgba(144, 148, 255, 0.9), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.c-5 {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.c-5 .text {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.c-5 h2 {
+    /* width要給對地方 */
+    width: 746px;
+}
+
+.block-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-2 {
+    width: 856px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block-3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-text {
+    /* width位置要設定對 */
+    width: 636px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-text p {
+    font-size: 16px;
+}
+
+.card-text a {
+    font-size: 16px;
+    width: 185px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 32px;
+    padding: 12px 24px;
+}
+
+.block-4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 16px;
+}
